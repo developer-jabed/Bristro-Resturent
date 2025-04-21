@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
 import OfferMenu from "./OfferMenu";
+import { Link } from "react-router-dom";
 
 const Offer = () => {
   const [menu, setMenu] = useState([]);
   useEffect(() => {
-    fetch("menu.json")
+    fetch("http://localhost:5000/menu")
       .then((res) => res.json())
 
       .then((data) => {
@@ -28,15 +29,14 @@ const Offer = () => {
           <OfferMenu item={item} key={item._id}></OfferMenu>
         ))}
       </div>
-     <div className="flex justify-center">
-     <button
-        className="mt-10 border-b-2 border-black hover:bg-amber-200 p-3 text-center rounded-lg duration-700 font-bold flex justify-center "
-        to="readMore"
-      >
-        {" "}
-        ORDER YOUR FAVOURITE FOOD
-      </button>
-     </div>
+      <div className="flex justify-center">
+        <Link
+          to="/shop/drink"
+          className="mt-10 border-b-2 border-black hover:bg-amber-200 p-3 text-center rounded-lg duration-700 font-bold"
+        >
+          ORDER YOUR FAVOURITE FOOD
+        </Link>
+      </div>
     </div>
   );
 };

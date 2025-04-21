@@ -1,7 +1,7 @@
 import React from "react";
-import img from "../../../../assets/menu/salad-bg.jpg";
+import img from "../../../../assets/menu/soup-bg.jpg";
 
-const SaladBanner = () => {
+const SoupBanner = () => {
   return (
     <div
       className="hero h-[700px] mt-10 rounded-lg"
@@ -12,7 +12,7 @@ const SaladBanner = () => {
       <div className="hero-overlay"></div>
       <div className="hero-content text-neutral-content bg-[#151515] opacity-80 p-40 text-center">
         <div className="max-w-md">
-          <h1 className="mb-5 text-5xl font-bold">Salads </h1>
+          <h1 className="mb-5 text-5xl font-bold">Soups</h1>
           <p className="mb-5">
             Lorem Ipsum has been the industry s standard dummy text ever since
             the 1500s, when an unknown printer took a galley of type and
@@ -24,4 +24,4 @@ const SaladBanner = () => {
   );
 };
 
-export default SaladBanner;
+export default SoupBanner;

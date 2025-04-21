@@ -9,6 +9,8 @@ import PizzaBanner from "./Pizza/Pizzas/PizzaBanner";
 import Pizzas from "./Pizza/Pizzas/Pizzas";
 import SaladBanner from "./Salads/Salad/SaladBanner";
 import Salads from "./Salads/Salads";
+import SoupBanner from "./Soups/Soup/SoupBanner";
+import Soups from "./Soups/Soups";
 
 const Menu = () => {
   return (
@@ -29,6 +31,10 @@ const Menu = () => {
       <div>
         <SaladBanner></SaladBanner>
         <Salads></Salads>
+      </div>
+      <div>
+        <SoupBanner></SoupBanner>
+        <Soups></Soups>
       </div>
     </div>
   );
