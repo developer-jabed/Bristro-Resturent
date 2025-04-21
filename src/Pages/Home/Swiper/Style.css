@@ -1,0 +1,25 @@
+.mySwiper {
+  width: 100%;
+  padding-bottom: 60px; /* Space for pagination dots */
+}
+
+.mySwiper .swiper-pagination {
+  bottom: 16px !important;
+}
+
+/* Customize bullet style with magenta border */
+.mySwiper .swiper-pagination-bullet {
+  background: #fff;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+  border: 2px solid magenta; /* 👈 magenta border */
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.mySwiper .swiper-pagination-bullet-active {
+  opacity: 1;
+  background: magenta; /* Optional: fill active bullet with magenta */
+  border-color: magenta;
+}
