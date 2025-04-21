@@ -6,10 +6,14 @@ import Bristo from "./Bristo/Bristo";
 import { Link } from "react-router-dom";
 import CheckBistro from "./Bristo/CheckBistro";
 import Testimonials from "./TESTIMONIALS/Testimonials";
+import { Helmet } from "react-helmet";
 
 const Home = () => {
   return (
     <div>
+      <Helmet>
+        <title>Bristo Boss || Home</title>
+      </Helmet>
       <div className="mt-[65px] rounded-lg">
         <Banner></Banner>
       </div>
